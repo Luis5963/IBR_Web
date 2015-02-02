@@ -11,8 +11,8 @@
 </head>
 <body>
 	<header>
-		<figure id="logo">
-			<a href="index.html"><img src="images/logoibr.png"></a>
+		<figure id="logo" align="center">
+			<a href="index.html"><img src="images/logoibr.png" /></a>
 		</figure>
 		<h1>
 			Inicio
@@ -40,10 +40,10 @@
   <!-- The container is used to define the width of the slideshow -->
   <div class="container">
     <div id="slides">
-     <img src="" alt="">
-     <img src="" alt="">
-     <img src="" alt="">
-     <img src="" alt="">
+     <img src="https://scontent-b-lax.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/1467290_452674681521184_1900712159_n.jpg?oh=6ad6ae2d846dd0b609295a2729d78d9b&oe=556C4134" alt="">
+     <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-prn2/v/t1.0-9/p417x417/10628579_798375236893305_8824531351659623550_n.jpg?oh=110665b79f4321c9c32da56234147981&oe=55548D42&__gda__=1433297754_a41ec3aea338b504099ae2a7f0aa3cf7" alt="">
+     <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/1455017_452673674854618_639575914_n.jpg?oh=004bb441e1eac2ce9d18ed435d5ad08b&oe=5553DC1F&__gda__=1433259094_5c7421853d494b70e94c6227a6dfd525" alt="">
+     <img src="https://scontent-a-lax.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1384053_420691494719503_761011309_n.jpg?oh=96c5d993464f780693a32594121914dc&oe=554CD088" alt="">
     </div>
   </div>
   <!-- End SlidesJS Required: Start Slides -->
@@ -63,14 +63,14 @@
         width: 940,
         height: 528,
         navigation: {
-          effect: "fade"
+          effect: "slideshow"
         },
         pagination: {
-          effect: "fade"
+          effect: "slideshow"
         },
         effect: {
           fade: {
-            speed: 400
+            speed: 10
           }
         }
       });
@@ -79,17 +79,24 @@
   <!-- End SlidesJS Required -->
   <footer>
   	<figure id="img_footer">
-		<a href="index.html"><img src="images/logoibr.png"></a>
+		<img src="images/logoresu.jpg">
 	</figure>
-	<div>
-		<p id ="direccion" class="icon-ubicacion">Convento de Santa Mónica #83 col. Jardines de Santa Mónica. Tlalnepantla, Edo. De México. CP 54050</p>
-		<div id="contacto">
-			<div class="icon-telefono">(55) 5398 8413</div>
-			<a href="https://www.facebook.com/ibresurreccion1974"><div class="icon-facebook"></div></a>
-			<a href="https://twitter.com/ibresurreccion"><div class="icon-twitter"></div></a>
-		</div>
+	<div id ="direccion">
+		<figure id="img_direccion">
+			<img src="images/loc.jpg" alt="">
+		</figure>
+		<p>Convento de Santa Mónica #83 col. Jardines de Santa Mónica. Tlalnepantla, Edo. De México. CP 54050</p>
 	</div>
-	<p>- @2015 Todos los derechos reservados Iglesia Bautista Resurrección A.R -</p>
+	<div id="contacto">
+		<div class="icon-telefono">(55) 5398 8413</div>
+		<figure class="redes_sociales">
+			<a href="https://www.facebook.com/ibresurreccion1974"><img src="images/fb.png" id="icon-facebook"/></a>
+		</figure>
+		<figure class="redes_sociales">
+			<a href="https://twitter.com/ibresurreccion"><img src="images/twitter.png" id="icon-twitter"/></a>
+		</figure>
+	</div>
+	<p>- @2015 Todos los derechos reservados - <br> - Iglesia Bautista Resurrección A.R. -</p>
   </footer>
 </body>
 </body>
