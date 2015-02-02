@@ -7,24 +7,90 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/estilos.css">
-	<script type="text/javascript" src="scripts/javascript.js"></script>
+	<script type="text/javascript" src="scripts/googlefont.js"></script>
 </head>
 <body>
 	<header>
-	<figure id="logo">
+		<figure id="logo">
+			<a href="index.html"><img src="images/logoibr.png"></a>
+		</figure>
+		<h1>
+			Inicio
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Calendario</a></li>
+				<li><a href="#">¿Quines Somos?</a></li>
+				<li><a href="#">Contacto</a></li>
+				<li><a href="#">Misiones</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="horarios">
+		<h2>Horarios</h2>
+		<ul>
+			<li>10:00-10:30 Devocional y Periodo de Oración</li>
+			<li>10:30-12:00 Escuela Dominical</li>
+			<li>12:15-14:00 Culto Dominical</li>
+			<li>18:00-19:00 Culto Vespertino</li>
+			<li>Miercoles 19:00 Culto de Oración</li>
+		</ul>
+	</div>
+	 <!-- SlidesJS Required: Start Slides -->
+  <!-- The container is used to define the width of the slideshow -->
+  <div class="container">
+    <div id="slides">
+     <img src="" alt="">
+     <img src="" alt="">
+     <img src="" alt="">
+     <img src="" alt="">
+    </div>
+  </div>
+  <!-- End SlidesJS Required: Start Slides -->
+
+  <!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="scripts/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: {
+          effect: "fade"
+        },
+        pagination: {
+          effect: "fade"
+        },
+        effect: {
+          fade: {
+            speed: 400
+          }
+        }
+      });
+    });
+  </script>
+  <!-- End SlidesJS Required -->
+  <footer>
+  	<figure id="img_footer">
 		<a href="index.html"><img src="images/logoibr.png"></a>
 	</figure>
-	<h1>
-		Inicio
-	</h1>
-	<nav>
-		<ul>
-			<li><a href="#">Calendario</a></li>
-			<li><a href="#">¿Quines Somos?</a></li>
-			<li><a href="#">Contacto</a></li>
-			<li><a href="#">Misiones</a></li>
-		</ul>
-	</nav>
-	</header>
+	<div>
+		<p id ="direccion" class="icon-ubicacion">Convento de Santa Mónica #83 col. Jardines de Santa Mónica. Tlalnepantla, Edo. De México. CP 54050</p>
+		<div id="contacto">
+			<div class="icon-telefono">(55) 5398 8413</div>
+			<a href="https://www.facebook.com/ibresurreccion1974"><div class="icon-facebook"></div></a>
+			<a href="https://twitter.com/ibresurreccion"><div class="icon-twitter"></div></a>
+		</div>
+	</div>
+	<p>- @2015 Todos los derechos reservados Iglesia Bautista Resurrección A.R -</p>
+  </footer>
+</body>
 </body>
 </html>
